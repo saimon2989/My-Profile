@@ -315,11 +315,11 @@ ul {
 @media only screen and (max-width: 620px){
 
     .container{
-        width: 620px;
+        width: auto;
     }
 
     .nav-main {
-        width: 960px;
+        width: 620px;
         height: 55px;
         margin-left: 20px;
         font-size: 20px;
@@ -354,7 +354,7 @@ ul {
         text-align: center;
     }
     .footer{
-        width: 992px;
+        width: 720px;
         height: 100px;
     }
     .contact {
