@@ -21,7 +21,9 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <!-- Archivo CSS -->
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Styles.css -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
@@ -32,76 +34,148 @@
 <body>
     <div class="container">
         <!-- Navigation -->
-        <nav class="nav-main">
-            <img class="nav-brand" src="img/SOH logo-01.png" alt="Logo.png">
-            <div>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light rounded-pill bg-light my-3 p-2">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5" href="#"><img src="img/SOH logo-01.png" style="width: 40px;" alt="sohlogo.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Others Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
                 </ul>
+                </div>
             </div>
         </nav>
+        <!-- Home -->
+
+        <!-- Personal Info -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="d-flex flex-column">
+                        <img class="rounded-circle mx-auto" style="width: 13em;" src="img/simon sin aretas.jpg" alt="fotoperfil.png">
+                        <h2 class="fs-1 mx-auto">Simón Orozco </h2>
+                        <h2 class="fs-1 mx-auto">Henao</h2>
+                        <h3 class="fs-2 mx-auto fw-light fst-italic">Web Junior Designer</h3>
+                        <div class="d-flex justify-content-center">
+                            <a style="font-size: 2em" href="https://github.com/saimon2989"><i class="fab fa-github mx-2"></i></a>
+                            <a style="font-size: 2em" href="https://www.linkedin.com/in/sim%C3%B3n-orozco-henao-1aaab3188/"><i class="fab fa-linkedin mx-2" ></i></a>
+                            <a style="font-size: 2em" href="https://www.instagram.com/design.soh/"><i class="fab fa-instagram mx-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h2 class="fs-1 fst-italic">About me : </h2>
+                    <p class="fs-6">
+                        Industrial Designer and student of Full Stack Web Developer. Results-based work oriented, easy to adapt, responsible, proactive, with relationship skills, creativity and teamwork. I really like design and technology, I consider that the concatenation of these twovariables together with design is one of the best ways to create and develop any type ofidea or project. In my spare time I like to design installations and assemblies of programmable LED lightingcontrolled by audiovisual devices or design software.
+                        <br>
+                        <br>
+                        Diseñador Industrial y estudiante de Desarrollador web full stack. Orientado al trabajo basado en resultados, de fácil adaptación, responsable, pro-activo, con habilidades de relacionamiento, creatividad y trabajo en equipo. Me gusta mucho el diseño y la tecnología, considero que la concatenación de estas dos variables junto con el diseño es una de las mejores maneras de creación y desarrollo de cualquier tipo de idea o proyecto.​ En mis tiempos libres me gusta diseñar instalaciones y montajes de iluminación LED programable controlada por dispositivos o softwares audiovisuales de diseño.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Skills -->
+        <div class="container my-3">
+            <div class="row align-items-center rounded-3 border border-5 shadow p-3 mb-5" style="background-color: #E8e8e8">
+                    <h2 class="d-flex justify-content-center">Skills</h2>
+                    <div class="col-sm-6" >
+                        <ul class="list-unstyled p-5">
+                            <li class="d-flex flex-row my-4"><img class="me-1" style="width: 4em;" id="illustratoricon" src="img/graphic-design.svg" alt="ilustrattor.png"> Product Design Methodologies </li>
+                            <li class="d-flex flex-row my-4"><img class="me-1" style="width: 4em;" id="illustratoricon" src="img/sketch.svg" alt="ilustrattor.png"> Mockup </li>
+                            <li class="d-flex flex-row my-4"><img class="me-1" style="width: 4em;" id="illustratoricon" src="img/user-experience.svg" alt="ilustrattor.png"> User Experience </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled p-5">
+                            <li class="d-flex flex-row my-4"><img class="me-1" style="width: 4em;" id="illustratoricon" src="img/computer.svg" alt="ilustrattor.png"> Web Design </li>
+                            <li class="d-flex flex-row my-4"><img class="me-1" style="width: 4em;" id="illustratoricon" src="img/skills.svg" alt="ilustrattor.png"> Soft Skills</li>
+
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        <!-- Tools -->
+        <div class="container my-3">
+            <div class="row align-items-center rounded-3 border border-5 shadow p-3 mb-5" style="background-color: #E8e8e8">
+                    <h2 class="d-flex justify-content-center">Tools</h2>
+                    <div class="col-sm-6" >
+                        <ul class="list-unstyled p-5">
+                            <li><img style="width: 4em;" id="illustratoricon" src="img/illustrator.svg" alt="ilustrattor.png"> Adobe Illustrator </li>
+                            <li><img style="width: 4em;" id="photoshopicon" src="img/photoshop.svg" alt="photoshop.png"> Adobe Photoshop</li>
+                            <li><img style="width: 4em;" id="premiereicon" src="img/premier.svg" alt="premiere.png"> Adobe Premiere</li>
+                            <li><img style="width: 4em;" id="premiereicon" src="img/html-5.svg" alt="HTML5.png"> HTML5 Medium</li>
+                            <li><img style="width: 4em;" id="premiereicon" src="img/css3.svg" alt="css3.png"> CSS3 Medium</li>
+                            <li><img style="width: 4em;" id="premiereicon" src="img/javascript.svg" alt="javascript.png"> Javascript Basic</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled p-5">
+                            <li><img style="width: 4em;" id="solidworksicon" src="img/solidworks.svg" alt="solidworks.png"> SolidWorks </li>
+                            <li><img style="width: 4em;" id="rhinoicon" src="img/rhinoceros-6.svg" alt="rhino.png"> Rhinoceros 6 </li>
+                            <li><img style="width: 4em;" id="figmaicon" src="img/figma.svg" alt="figma.png"> Figma </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+        
         
 
-        <!-- Home -->
-        <main id="home" class="home">
-            <div class="home-left">
-                <img class="profileimg" src="img/simon sin aretas.jpg" alt="profilephoto.jpg">
-                <h2>Simón Orozco Henao</h2>
-                <h4>Industrial Designer <br> and Web Developer</h4>
-                <a href="https://www.upb.edu.co/es/pregrados/diseno-industrial-medellin"><h5>Universidad Pontificia Bolivariana </h5></a>
-                <a href="https://www.devf.la/"><h5>DEV.F</h5></a>
-                <div class="social-links">
-                    <a href="https://github.com/saimon2989"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/sim%C3%B3n-orozco-henao-1aaab3188/"><i class="fab fa-linkedin" ></i></a>
-                    <a href="https://www.instagram.com/design.soh/"><i class="fab fa-instagram"></i></a>
+        <!-- Contact -->
+        <form class="my-3">
+            <div class="row my-3">
+                <h2 class=" my-2 d-flex justify-content-center">Contact Me</h2>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
                 </div>
+                    <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                    </div>
             </div>
-            <div class="home-right">
-                <h2>Biography</h2>
-                <p>Industrial Designer and student of Full Stack Web Developer. Results-based work oriented, easy to adapt, responsible, proactive, with relationship skills, creativity and teamwork.
-                I really like design and technology, I consider that the concatenation of these twovariables together with design is one of the best ways to create and develop any type ofidea or project.
-                In my spare time I like to design installations and assemblies of programmable LED lightingcontrolled by audiovisual devices or design software. 
-                <br>
-                <br>    
-                Diseñador Industrial y estudiante de Desarrollador web full stack. Orientado al trabajo basado en resultados, de fácil adaptación, responsable, pro-activo, con habilidades de relacionamiento, creatividad y trabajo en equipo.
-                Me gusta mucho el diseño y la tecnología, considero que la concatenación de estas dos variables junto con el diseño es una de las mejores maneras de creación y desarrollo de cualquier tipo de idea o proyecto.
-​                En mis tiempos libres me gusta diseñar instalaciones y montajes de iluminación LED 
-                programable controlada por dispositivos o softwares audiovisuales de diseño. </p>
-                <h4>Skills</h4>
-                <div class="intedu">
-                    <ul class="skills" id="skills">
-                        <li><i id="html5icon" class="fab fa-html5"></i> HTML5 </li>
-                        <li><i id="css3icon" class="fab fa-css3-alt"></i> CSS3 </li>
-                        <li><i id="javascripticon" class="fab fa-js-square"></i> JavaScript </li>
-                        <li><img id="illustratoricon" src="img/illustrator.svg" alt="ilustrattor.png"> Adobe Illustrator </li>
-                        <li><img id="photoshopicon" src="img/photoshop.svg" alt="photoshop.png"> Adobe Photoshop</li>
-                        <li><img id="premiereicon" src="img/premiere.svg" alt="premiere.png"> Adobe Premiere</li>
-                        <li><img id="solidworksicon" src="img/solidworks.svg" alt="solidworks.png"> SolidWorks </li>
-                        <li><img id="rhinoicon" src="img/rhinoceros-6.svg" alt="rhino.png"> Rhinoceros 6 </li>
-                        <li><img id="figmaicon" src="img/figma.svg" alt="figma.png"> Figma </li>
-                        <li><img id="sketchicon" src="img/sketch.svg" alt="sketch.png"> Sketck </li>
-                    </ul>
-                </div>
-                
+    
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             </div>
-        </div>
-        <div class="contact" id="contact">
-            <h3>Contacto / Contact </h3>
-            <p>Simón Orozco Henao <br> saimon2989@gmail.com <br> +57 3172220393
-            </p>
-        </div>
-        </main>
-    <footer class="footer">
-        <h6>Simón Orozco Henao © 2020.</h6>
-        <div class="social-links-footer">
-            <a href="https://github.com/saimon2989"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sim%C3%B3n-orozco-henao-1aaab3188/"><i class="fab fa-linkedin" ></i></a>
-            <a href="https://www.instagram.com/design.soh/"><i class="fab fa-instagram"></i></a>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <!-- Footer -->
+    <footer class="footer container bg-light rounded-pill p-2">
+        <div class="row col-sm-12">
+            <h6 class="d-flex justify-content-center">Simón Orozco Henao © 2020.</h6>
+            <div class="d-flex justify-content-center">
+                <a style="font-size: 2em" href="https://github.com/saimon2989"><i class="fab fa-github mx-2"></i></a>
+                <a style="font-size: 2em" href="https://www.linkedin.com/in/sim%C3%B3n-orozco-henao-1aaab3188/"><i class="fab fa-linkedin mx-2" ></i></a>
+                <a style="font-size: 2em" href="https://www.instagram.com/design.soh/"><i class="fab fa-instagram mx-2"></i></a>
+            </div>
         </div>
     </footer>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<!-- Bootstrap 5 scripts -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<!-- main Script -->
 <script src="../js/main.js"></script>
 </body>
 </html>
