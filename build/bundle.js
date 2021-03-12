@@ -1,1 +1,0 @@
-(()=>{"use strict";const e=document.querySelector("#form__input-name"),o=document.querySelector("#form__input-lastname"),t=document.querySelector("#form__input-email"),n=document.querySelector("#form__input-text");document.querySelector("#form__button").addEventListener("click",(function(){console.log(e.value),console.log(o.value),console.log(t.value),console.log(n.value)}))})();
